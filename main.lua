@@ -72,7 +72,7 @@ function SMODS.INIT.fiveceb()
 	local jokerUpdates = {}
 	
 	for i,v in ipairs(conf_5ceb.jokersToLoad) do
-		local jokerInfo = love.filesystem.load(mod.path .. 'jokers/'..v..'.lua')()
+		local jokerInfo = NFS.load(mod.path .. 'jokers/'..v..'.lua')()
 		fillInDefaults(jokerInfo,jokerInfoDefault)
 		
 		joker = SMODS.Joker:new(
@@ -160,9 +160,9 @@ function SMODS.INIT.fiveceb()
 		end
 
 		local debugDeckLoc = {
-			name="5ceb debug deck",
+			name="5CEBalatro调试牌组",
 			text={
-				"lol, lmao even",
+				"爆笑如雷了家人们",
 			},
 		}
 		

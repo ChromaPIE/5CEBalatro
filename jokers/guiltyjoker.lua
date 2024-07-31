@@ -1,11 +1,11 @@
 local jokerInfo = {
-	name = 'Guilty Joker',
+	name = '遭罪小丑',
 	config = {},
 	text = {
-		'{C:mult}+1{} Mult per $',
-		'Capped at {C:mult}+40{}',
-		'{C:attention}Costs all $ to sell{}',
-		'{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)'
+		'每拥有{C:money}$1{}，本牌获得{C:mult}+1{}倍率',
+		'上限为{C:mult}+40{}倍率',
+		'{C:attention}售出本牌时失去所有资金',
+		'{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）'
 	},
 	rarity = 2,
 	cost = 4,
